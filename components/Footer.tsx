@@ -14,6 +14,7 @@ function Footer() {
 
     emailjs
       .sendForm(
+        //@ts-ignore
         process.env.NEXT_PUBLIC_SERVICE_ID,
         process.env.NEXT_PUBLIC_TEMPLATE_ID,
         formRef.current,
@@ -36,7 +37,7 @@ function Footer() {
   };
 
   return (
-    <div className='bg-primary-dark'>
+    <div className='bg-primary-dark' id='contact'>
       <footer className='container flex flex-col relative max-w-7xl mx-auto py-32'>
         <div className='flex justify-between items-center w-full pb-4 border-b border-primary-light'>
           <p className='max-w-xs text-4xl font-bold text-primary-light md:max-w-md tracking-tighter transition-all duration-300'>
@@ -46,7 +47,9 @@ function Footer() {
 
         <div className='flex flex-col lg:flex-row space-y-10 lg:space-y-2 lg:space-x-20 justify-between'>
           <form
+            //@ts-ignore
             ref={formRef}
+            //@ts-ignore
             onSubmit={sendEmail}
             className='flex flex-1 flex-col pt-10 space-y-4'
           >
@@ -79,7 +82,7 @@ function Footer() {
               spellCheck='false'
               required
             ></textarea>
-            <button className='flex justify-center  items-center w-32 gap-1 border-2 border-primary-purple text-primary-light font-medium py-3 px-8 rounded-md transition-all duration-300 hover:text-gray-400'>
+            <button className='flex justify-center  items-center w-32 gap-1 border-2 border-primary-purple text-primary-light font-medium py-3 px-8 rounded-md transition-all duration-300 hover:text-primary-light/60'>
               Send
             </button>
           </form>
