@@ -3,10 +3,11 @@ import Link from 'next/link';
 import React, { useEffect, useState } from 'react';
 import { RiShareBoxFill } from 'react-icons/ri';
 import Card from './Card';
-import Spinner from './Spinner';
+import Skeleton from './Skeleton';
 
 function Projects() {
   const [isLoading, setIsLoading] = useState(false);
+  const arr = [1, 2, 3, 4, 5, 6];
   const [data, setData] = useState<Repo[]>([]);
   const githubFetchURL =
     'https://gh-pinned-repos.egoist.dev/?username=koraygnr';
@@ -44,9 +45,9 @@ function Projects() {
         </Link>
       </div>
       <div className='grid grid-cols-1 md:grid-cols-2 gap-10'>
-        {data.map((item, i) => (
-          <Card item={item} isLoading={isLoading} key={i} />
-        ))}
+        {isLoading
+          ? arr.map((i) => <Skeleton key={i} />)
+          : data.map((item, i) => <Card item={item} key={i} />)}
       </div>
     </div>
   );
