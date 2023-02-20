@@ -2,7 +2,7 @@
 
 Nextjs ve Tailwindcss teknolojilerini kullanarak hazırlamış olduğum kişisel web sayfam. Sayfamda github repomdaki pinli repoları "Github pinned repos Api" (https://github.com/egoist/gh-pinned-repos) yardımıyla güncel olarak yayınlıyorum.
 
-####Kullanılan teknolojiler :
+#### Kullanılan teknolojiler :
 - Reactjs / Nextjs
 - Tailwindcss
 - react-icons
