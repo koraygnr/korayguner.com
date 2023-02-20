@@ -43,18 +43,10 @@ function Projects() {
           </button>
         </Link>
       </div>
-      <div
-        className={`${
-          isLoading
-            ? 'flex justify-center py-4'
-            : 'grid grid-cols-1 md:grid-cols-2 gap-10'
-        }`}
-      >
-        {isLoading ? (
-          <Spinner color='fill-primary-purple' />
-        ) : (
-          data.map((item, i) => <Card item={item} key={i} />)
-        )}
+      <div className='grid grid-cols-1 md:grid-cols-2 gap-10'>
+        {data.map((item, i) => (
+          <Card item={item} isLoading={isLoading} key={i} />
+        ))}
       </div>
     </div>
   );
