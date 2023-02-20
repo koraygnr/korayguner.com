@@ -1,3 +1,15 @@
+## korayguner.com
+
+Nextjs ve Tailwindcss teknolojilerini kullanarak hazırlamış olduğum kişisel web sayfam. Sayfamda github repomdaki pinli repoları "Github pinned repos Api" (https://github.com/egoist/gh-pinned-repos) yardımıyla güncel olarak yayınlıyorum.
+
+####Kullanılan teknolojiler :
+- Reactjs / Nextjs
+- Tailwindcss
+- react-icons
+- react-hot-toast
+- @emailjs/browser
+
+
 This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 
 ## Getting Started
