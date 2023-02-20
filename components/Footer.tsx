@@ -135,7 +135,7 @@ function Footer() {
       </footer>
 
       <div className='bg-[#191918]'>
-        <div className='flex justify-between items-center max-w-7xl px-6 py-4 md:px-12 mx-auto w-full bg-[#191918]'>
+        <div className='flex justify-between items-center max-w-7xl px-6 py-4 md:px-12 lg:px-0 mx-auto w-full bg-[#191918]'>
           <p className='text-xs font-light text-zinc-500 tracking-wide'>
             korayguner.com | 2023{' '}
           </p>
