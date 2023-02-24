@@ -89,7 +89,7 @@ function Footer() {
           <div className='flex flex-1 flex-col space-y-8 '>
             <div className='pt-10'>
               <p className='text-primary-light text-xl md:text-3xl font-medium'>
-                Want to reach out about a project, collobration or just want to
+                Want to reach out about a project, collaboration or just want to
                 say friendly hello?
                 <Link href='mailto:korayguneer@gmail.com'>
                   <span className='text-primary-purple'>
@@ -135,7 +135,7 @@ function Footer() {
       </footer>
 
       <div className='bg-[#191918]'>
-        <div className='flex justify-between items-center max-w-7xl px-6 py-4 md:px-12 lg:px-0 mx-auto w-full bg-[#191918]'>
+        <div className='flex justify-between items-center max-w-7xl px-6 py-4 md:px-12 xl:px-0 mx-auto w-full bg-[#191918]'>
           <p className='text-xs font-light text-zinc-500 tracking-wide'>
             korayguner.com | 2023{' '}
           </p>
